@@ -6,6 +6,7 @@ function randNum(a,b,y)
 end
 
 function GenerateGoodParameters(constParams)
+
    
     ΔE,ΔI,η_0E,η_0I,τE,τI =  constParams
     p = GenRandParams()
@@ -90,6 +91,7 @@ function GenPop(SizePop,constParams)
     #Generates a population of phenotypes near a hopf bifurcation
     phenotypes = []
     for i = 1:SizePop
+        println("Generating Parameters (",i,"/",SizePop,")")
         if i == 1
             phenotypes = phenotype(P = GenerateGoodParameters(constParams))
         else

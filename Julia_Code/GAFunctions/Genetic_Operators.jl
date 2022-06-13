@@ -48,15 +48,19 @@ function doCrossover(parents,n)
     i = 0
     sizeP = size(parents,1)
     while i <= n
+        println("Attempting to generate child (",i,"/",n,")")
         r1,r2 = randperm(sizeP)[1:2]
-        child = acceptChild(constParams,parents[r1],parents[r2])
-        if i == 1
-            nextGen = child
-        else
-            nextGen = cat(nextGen,child,dims=1)
+
+        child,flag = acceptChild(constParams,parents[r1],parents[r2])
+        if flag == 1
+            if i == 1
+                nextGen = child
+            else
+                nextGen = cat(nextGen,child,dims=1)
+            end
+            i += 1
         end
 
-        i += 1
         #println(size(nextGen,1))
     end
 
@@ -82,6 +86,7 @@ end
 
 
 function acceptChild(constParams,Parent1,Parent2)
+    
 
     ΔE,ΔI,η_0E,η_0I,τE,τI =  constParams
     p = crossover(Parent1,Parent2).P
@@ -150,14 +155,14 @@ function acceptChild(constParams,Parent1,Parent2)
     end
 
     if counter  == 200
-        println("could not make child")
-        if rand() > 0.5
-            return phenotype(P=Parent1.P)
-        else
-            return phenotype(P=Parent2.P)
-        end
+        println("...could not make child")
+        flag = 0
+        
+        return 0,flag
     else 
-        return phenotype(P = p)
+        println("successfully generated a valid child")
+        flag = 1
+        return phenotype(P = p),flag
     end
 end
 
