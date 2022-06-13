@@ -1,0 +1,70 @@
+### version 0.04. 2014.
+### Changes since version 0.03 (released in 2013)
+
+add refererence
+
+detail function explanation
+
+manual with a sample data
+
+eeg was changed to epo in all function names
+
+Change name of mf_epoave  to mf_epoavg
+add mf_ev22ecd
+mf_epoch uses ouput of mf_ev22ecd, rather than ev2 file from neuroscan anymore.
+add sample_rate to input parameters of mf_epoafr
+change name of mf_keeptrial to mf_epo_keeptrial 
+Image script:
+Electrode position files were transformed, no need to do it in image (e.g., below) scripts any more.
+load ch64_pos_2D;
+ch64_pos_2D(:,2) = 1 - ch64_pos_2D(:,2);
+in image script, mf_top2D: change value range from [-a a] to [a b]
+add more colormaps in image script
+mf_cmorlet was re-written, adding parameters is_vary_ncw and ncw_step, which were also added to mf_tfcm, mf_epotf,mf_eposyn. mf_cmorlet_character and mf_cmorlet_range were added to explore morlet's wavelet.
+mf_tfcm
+
+for mf_matrix_norm,remove normalize method 4.
+
+add mf_eporeref.m. rereference to average reference.
+
+for mf_epotf, for 'E_type', 'coef' is removed; and 'db' is not recommanded due to negative values.
+mf_cntfilter -> mf_rawfilter
+
+mf_erpstat, mf_tfstat: 
+	remove cluster parameter, which is moved to when display (see image script).
+	changed to separate 1 sample test and wilcoxon, 2 sample paired test and wilconxon, and indepandent test. and oneway anova
+
+add 3 custorm colormap
+
+add mf_drawerp_stat; mf_drawtf_stat;
+
+add mf_cnt2raw; mf_bcd2raw
+(requirement: eeglab)
+
+32.asc -> neuroscan32.asc; 64.asc -> neuroscan64.asc
+ch32_pos_2D -> neuroscan_ch32_pos_2D; ch64_pos_2D -> neuroscan_ch64_pos_2D; ch64_label -> neuroscan_ch64_label; ch64_label_noeog -> neuroscan_ch64_label_noeog;
+
+add: biosemi_ch64_label;biosemi_ch64_label_noeog;biosemi_ch64_pos_2D;
+
+change mf_fft -> mf_fft_plot.
+
+add mf_epospec
+ 
+correction:
+mf_epoch: 
+	1. number of event codes if the input of "event_code" is vector.
+	2. handle the situation in which event is too early and cannot has baseline
+correct clim in mf_drawtf
+mf_drawerp: add customize color order, line style order, customize line width, add a line at zero. 
+add mf_topo2D_stat to plot statistical topography
+
+add f2z.m and t2z.m
+
+add mf_erp2spm.
+
+add mf_vector_mask_zero.m and mf_erp_mask_zero.m
+add mf_matrix_mask_zero.m and mf_tf_mask_zero.m
+
+remove a bug when set is_scale==0 for mf_drawerp_stat
+
+

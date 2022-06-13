@@ -1,0 +1,466 @@
+time : 11:28:37
+time : 11:28:37
+Sampling Rate is: 500.0
+Generating Initial Population of 100 Phenotypes ... 
+Done.
+0.0%┣                                              ┫ 0/100 [00:00<00:-5, -0s/it]
+[1A1.0%┣▍                                         ┫ 1/100 [45:52<Inf:Inf, InfGs/it]
+[1A2.0%┣▊                                    ┫ 2/100 [01:32:11<150:33:18, 5.5ks/it]
+[1A3.0%┣█                                    ┫ 3/100 [02:18:15<111:45:08, 4.1ks/it]
+[1A4.0%┣█▌                                    ┫ 4/100 [03:04:37<98:27:55, 3.7ks/it]
+[1A5.0%┣██                                    ┫ 5/100 [03:48:41<90:31:03, 3.4ks/it]
+[1A6.0%┣██▎                                   ┫ 6/100 [04:32:43<85:27:09, 3.3ks/it]
+[1A7.0%┣██▋                                   ┫ 7/100 [05:16:45<81:49:31, 3.2ks/it]
+[1A8.0%┣███                                   ┫ 8/100 [06:00:45<79:01:19, 3.1ks/it]
+[1A9.0%┣███▍                                  ┫ 9/100 [06:44:50<76:44:55, 3.0ks/it]
+[1A10.0%┣███▋                                ┫ 10/100 [07:28:49<74:48:13, 3.0ks/it]
+[1A11.0%┣████                                ┫ 11/100 [08:12:47<73:05:45, 3.0ks/it]
+[1A12.0%┣████▎                               ┫ 12/100 [08:56:46<71:34:11, 2.9ks/it]
+[1A13.0%┣████▊                               ┫ 13/100 [09:40:46<70:10:31, 2.9ks/it]
+[1A14.0%┣█████                               ┫ 14/100 [10:24:48<68:53:20, 2.9ks/it]
+[1A15.0%┣█████▍                              ┫ 15/100 [11:08:53<67:41:03, 2.9ks/it]
+[1A16.0%┣█████▊                              ┫ 16/100 [11:52:53<66:32:11, 2.9ks/it]
+[1A17.0%┣██████▏                             ┫ 17/100 [12:36:55<65:26:30, 2.8ks/it]
+[1A18.0%┣██████▌                             ┫ 18/100 [13:20:54<64:23:12, 2.8ks/it]
+[1A19.0%┣██████▉                             ┫ 19/100 [14:04:56<63:22:12, 2.8ks/it]
+[1A20.0%┣███████▏                            ┫ 20/100 [14:49:00<62:23:08, 2.8ks/it]
+[1A21.0%┣███████▋                            ┫ 21/100 [15:33:02<61:25:28, 2.8ks/it]
+[1A22.0%┣████████                            ┫ 22/100 [16:17:04<60:29:07, 2.8ks/it]
+[1A23.0%┣████████▎                           ┫ 23/100 [17:01:07<59:33:55, 2.8ks/it]
+[1A24.0%┣████████▋                           ┫ 24/100 [17:45:09<58:39:36, 2.8ks/it]
+[1A25.0%┣█████████                           ┫ 25/100 [18:29:14<57:46:20, 2.8ks/it]
+[1A26.0%┣█████████▍                          ┫ 26/100 [19:13:14<56:53:33, 2.8ks/it]
+[1A27.0%┣█████████▊                          ┫ 27/100 [19:57:13<56:01:26, 2.8ks/it]
+[1A28.0%┣██████████                          ┫ 28/100 [20:41:16<55:10:02, 2.8ks/it]
+[1A29.0%┣██████████▍                         ┫ 29/100 [21:26:41<54:22:40, 2.8ks/it]
+[1A30.0%┣██████████▉                         ┫ 30/100 [22:13:11<53:38:03, 2.8ks/it]
+[1A31.0%┣███████████▏                        ┫ 31/100 [22:59:42<52:53:20, 2.8ks/it]
+[1A32.0%┣███████████▌                        ┫ 32/100 [23:45:55<52:07:49, 2.8ks/it]
+[1A33.0%┣███████████▉                        ┫ 33/100 [24:32:18<51:22:39, 2.8ks/it]
+[1A34.0%┣████████████▎                       ┫ 34/100 [25:17:03<50:34:06, 2.8ks/it]
+[1A35.0%┣████████████▋                       ┫ 35/100 [26:03:18<49:48:41, 2.8ks/it]
+[1A36.0%┣█████████████                       ┫ 36/100 [26:49:07<49:02:24, 2.8ks/it]
+[1A37.0%┣█████████████▎                      ┫ 37/100 [27:33:45<48:14:04, 2.8ks/it]
+[1A38.0%┣█████████████▊                      ┫ 38/100 [28:17:52<47:25:05, 2.8ks/it]
+[1A39.0%┣██████████████                      ┫ 39/100 [29:01:57<46:36:18, 2.8ks/it]
+[1A40.0%┣██████████████▍                     ┫ 40/100 [29:46:02<45:47:45, 2.7ks/it]
+[1A41.0%┣██████████████▊                     ┫ 41/100 [30:30:13<44:59:35, 2.7ks/it]
+[1A42.0%┣███████████████▏                    ┫ 42/100 [31:14:29<44:11:42, 2.7ks/it]
+[1A43.0%┣███████████████▌                    ┫ 43/100 [31:58:35<43:23:48, 2.7ks/it]
+[1A44.0%┣███████████████▉                    ┫ 44/100 [32:42:42<42:36:05, 2.7ks/it]
+[1A45.0%┣████████████████▏                   ┫ 45/100 [33:26:53<41:48:36, 2.7ks/it]
+[1A46.0%┣████████████████▋                   ┫ 46/100 [34:10:59<41:01:10, 2.7ks/it]
+[1A47.0%┣█████████████████                   ┫ 47/100 [34:54:59<40:13:47, 2.7ks/it]
+[1A48.0%┣█████████████████▎                  ┫ 48/100 [35:39:07<39:26:41, 2.7ks/it]
+[1A49.0%┣█████████████████▋                  ┫ 49/100 [36:23:15<38:39:42, 2.7ks/it]
+[1A50.0%┣██████████████████                  ┫ 50/100 [37:07:23<37:52:51, 2.7ks/it]
+[1A51.0%┣██████████████████▍                 ┫ 51/100 [37:51:30<37:06:04, 2.7ks/it]
+[1A52.0%┣██████████████████▊                 ┫ 52/100 [38:35:37<36:19:24, 2.7ks/it]
+[1A53.0%┣███████████████████                 ┫ 53/100 [39:19:49<35:32:54, 2.7ks/it]
+[1A54.0%┣███████████████████▍                ┫ 54/100 [40:03:59<34:46:28, 2.7ks/it]
+[1A55.0%┣███████████████████▉                ┫ 55/100 [40:48:08<34:00:07, 2.7ks/it]
+[1A56.0%┣████████████████████▏               ┫ 56/100 [41:32:16<33:13:49, 2.7ks/it]
+[1A57.0%┣████████████████████▌               ┫ 57/100 [42:16:29<32:27:39, 2.7ks/it]
+[1A58.0%┣████████████████████▉               ┫ 58/100 [43:00:36<31:41:30, 2.7ks/it]
+[1A59.0%┣█████████████████████▎              ┫ 59/100 [43:44:47<30:55:27, 2.7ks/it]
+[1A60.0%┣█████████████████████▋              ┫ 60/100 [44:28:56<30:09:27, 2.7ks/it]
+[1A61.0%┣██████████████████████              ┫ 61/100 [45:13:05<29:23:30, 2.7ks/it]
+[1A62.0%┣██████████████████████▎             ┫ 62/100 [45:57:14<28:37:38, 2.7ks/it]
+[1A63.0%┣██████████████████████▊             ┫ 63/100 [46:41:22<27:51:47, 2.7ks/it]
+[1A64.0%┣███████████████████████             ┫ 64/100 [47:25:32<27:06:01, 2.7ks/it]
+[1A65.0%┣███████████████████████▍            ┫ 65/100 [48:09:42<26:20:18, 2.7ks/it]
+[1A66.0%┣███████████████████████▊            ┫ 66/100 [48:53:49<25:34:37, 2.7ks/it]
+[1A67.0%┣████████████████████████▏           ┫ 67/100 [49:37:59<24:48:59, 2.7ks/it]
+[1A68.0%┣████████████████████████▌           ┫ 68/100 [50:22:11<24:03:26, 2.7ks/it]
+[1A69.0%┣████████████████████████▉           ┫ 69/100 [51:06:25<23:17:56, 2.7ks/it]
+[1A70.0%┣█████████████████████████▏          ┫ 70/100 [51:50:48<22:32:31, 2.7ks/it]
+[1A71.0%┣█████████████████████████▋          ┫ 71/100 [52:34:59<21:47:04, 2.7ks/it]
+[1A72.0%┣██████████████████████████          ┫ 72/100 [53:19:09<21:01:38, 2.7ks/it]
+[1A73.0%┣██████████████████████████▎         ┫ 73/100 [54:03:23<20:16:16, 2.7ks/it]
+[1A74.0%┣██████████████████████████▋         ┫ 74/100 [54:47:35<19:30:55, 2.7ks/it]
+[1A75.0%┣███████████████████████████         ┫ 75/100 [55:31:48<18:45:37, 2.7ks/it]
+[1A76.0%┣███████████████████████████▍        ┫ 76/100 [56:16:00<18:00:19, 2.7ks/it]
+[1A77.0%┣███████████████████████████▊        ┫ 77/100 [57:00:10<17:15:03, 2.7ks/it]
+[1A78.0%┣████████████████████████████        ┫ 78/100 [57:44:21<16:29:49, 2.7ks/it]
+[1A79.0%┣████████████████████████████▍       ┫ 79/100 [58:28:31<15:44:36, 2.7ks/it]
+[1A80.0%┣████████████████████████████▉       ┫ 80/100 [59:12:41<14:59:25, 2.7ks/it]
+[1A81.0%┣█████████████████████████████▏      ┫ 81/100 [59:56:54<14:14:16, 2.7ks/it]
+[1A82.0%┣█████████████████████████████▌      ┫ 82/100 [60:41:00<13:29:07, 2.7ks/it]
+[1A83.0%┣█████████████████████████████▉      ┫ 83/100 [61:25:07<12:43:59, 2.7ks/it]
+[1A84.0%┣██████████████████████████████▎     ┫ 84/100 [62:09:15<11:58:53, 2.7ks/it]
+[1A85.0%┣██████████████████████████████▋     ┫ 85/100 [62:53:23<11:13:49, 2.7ks/it]
+[1A86.0%┣███████████████████████████████     ┫ 86/100 [63:37:34<10:28:47, 2.7ks/it]
+[1A87.0%┣███████████████████████████████▎    ┫ 87/100 [64:21:43<09:43:45, 2.7ks/it]
+[1A88.0%┣███████████████████████████████▊    ┫ 88/100 [65:05:55<08:58:45, 2.7ks/it]
+[1A89.0%┣████████████████████████████████    ┫ 89/100 [65:50:06<08:13:46, 2.7ks/it]
+[1A90.0%┣████████████████████████████████▍   ┫ 90/100 [66:34:17<07:28:48, 2.7ks/it]
+[1A91.0%┣████████████████████████████████▊   ┫ 91/100 [67:18:28<06:43:51, 2.7ks/it]
+[1A92.0%┣█████████████████████████████████▏  ┫ 92/100 [68:02:38<05:58:55, 2.7ks/it]
+[1A93.0%┣█████████████████████████████████▌  ┫ 93/100 [68:46:46<05:14:00, 2.7ks/it]
+[1A94.0%┣█████████████████████████████████▉  ┫ 94/100 [69:30:54<04:29:05, 2.7ks/it]
+[1A95.0%┣██████████████████████████████████▏ ┫ 95/100 [70:15:08<03:44:13, 2.7ks/it]
+[1A96.0%┣██████████████████████████████████▋ ┫ 96/100 [70:59:23<02:59:21, 2.7ks/it]
+[1A97.0%┣███████████████████████████████████ ┫ 97/100 [71:43:32<02:14:29, 2.7ks/it]
+[1A98.0%┣███████████████████████████████████▎┫ 98/100 [72:27:43<01:29:39, 2.7ks/it]
+[1A99.0%┣██████████████████████████████████████▋┫ 99/100 [73:11:56<44:49, 2.7ks/it]
+[1A100.0%┣█████████████████████████████████████┫ 100/100 [73:56:06<00:00, 2.7ks/it]
+[1A100.0%┣█████████████████████████████████████┫ 100/100 [73:56:06<00:00, 2.7ks/it]
+Sampling Rate is: 500.0
+  6.654455 seconds (11.40 M allocations: 638.128 MiB, 4.43% gc time, 99.37% compilation time)
+Running MC trials for phenotype: 1
+Running MC trials for phenotype: 2
+Running MC trials for phenotype: 3
+Running MC trials for phenotype: 4
+Running MC trials for phenotype: 5
+Running MC trials for phenotype: 6
+Running MC trials for phenotype: 7
+Running MC trials for phenotype: 8
+Running MC trials for phenotype: 9
+Running MC trials for phenotype: 10
+Running MC trials for phenotype: 11
+Running MC trials for phenotype: 12
+Running MC trials for phenotype: 13
+Running MC trials for phenotype: 14
+Running MC trials for phenotype: 15
+Running MC trials for phenotype: 16
+Running MC trials for phenotype: 17
+Running MC trials for phenotype: 18
+Running MC trials for phenotype: 19
+Running MC trials for phenotype: 20
+Running MC trials for phenotype: 21
+Running MC trials for phenotype: 22
+Running MC trials for phenotype: 23
+Running MC trials for phenotype: 24
+Running MC trials for phenotype: 25
+Running MC trials for phenotype: 26
+Running MC trials for phenotype: 27
+Running MC trials for phenotype: 28
+Running MC trials for phenotype: 29
+Running MC trials for phenotype: 30
+Running MC trials for phenotype: 31
+Running MC trials for phenotype: 32
+Running MC trials for phenotype: 33
+Running MC trials for phenotype: 34
+Running MC trials for phenotype: 35
+Running MC trials for phenotype: 36
+Running MC trials for phenotype: 37
+Running MC trials for phenotype: 38
+Running MC trials for phenotype: 39
+Running MC trials for phenotype: 40
+Running MC trials for phenotype: 41
+Running MC trials for phenotype: 42
+Running MC trials for phenotype: 43
+Running MC trials for phenotype: 44
+Running MC trials for phenotype: 45
+Running MC trials for phenotype: 46
+Running MC trials for phenotype: 47
+Running MC trials for phenotype: 48
+Running MC trials for phenotype: 49
+Running MC trials for phenotype: 50
+Running MC trials for phenotype: 51
+Running MC trials for phenotype: 52
+Running MC trials for phenotype: 53
+Running MC trials for phenotype: 54
+Running MC trials for phenotype: 55
+Running MC trials for phenotype: 56
+Running MC trials for phenotype: 57
+Running MC trials for phenotype: 58
+Running MC trials for phenotype: 59
+Running MC trials for phenotype: 60
+Running MC trials for phenotype: 61
+Running MC trials for phenotype: 62
+Running MC trials for phenotype: 63
+Running MC trials for phenotype: 64
+Running MC trials for phenotype: 65
+Running MC trials for phenotype: 66
+Running MC trials for phenotype: 67
+Running MC trials for phenotype: 68
+Running MC trials for phenotype: 69
+Running MC trials for phenotype: 70
+Running MC trials for phenotype: 71
+Running MC trials for phenotype: 72
+Running MC trials for phenotype: 73
+Running MC trials for phenotype: 74
+Running MC trials for phenotype: 75
+Running MC trials for phenotype: 76
+Running MC trials for phenotype: 77
+Running MC trials for phenotype: 78
+Running MC trials for phenotype: 79
+Running MC trials for phenotype: 80
+Running MC trials for phenotype: 81
+Running MC trials for phenotype: 82
+Running MC trials for phenotype: 83
+Running MC trials for phenotype: 84
+Running MC trials for phenotype: 85
+Running MC trials for phenotype: 86
+Running MC trials for phenotype: 87
+Running MC trials for phenotype: 88
+Running MC trials for phenotype: 89
+Running MC trials for phenotype: 90
+Running MC trials for phenotype: 91
+Running MC trials for phenotype: 92
+Running MC trials for phenotype: 93
+Running MC trials for phenotype: 94
+Running MC trials for phenotype: 95
+Running MC trials for phenotype: 96
+Running MC trials for phenotype: 97
+Running MC trials for phenotype: 98
+Running MC trials for phenotype: 99
+Running MC trials for phenotype: 100
+[?1h=
+                                                                                                          < M A T L A B (R) >
+                                                                                                Copyright 1984-2021 The MathWorks, Inc.
+                                                                                           R2021a Update 3 (9.10.0.1684407) 64-bit (glnxa64)
+                                                                                                              May 27, 2021
+
+ 
+For online documentation, see https://www.mathworks.com/support
+For product information, visit www.mathworks.com.
+ 
+[?1l>time : 13:44:09
+Running Generation: 1
+Sampling Rate is: 500.0
+best phenotype in this generation is: 
+ [0.0842230692212536, 0.08620189909082988, 35.488122065658615, 99.15753853624057, 5.548483438456664, 3.0104744637712333, 3.816753381325822, 3.497004821386563, 1.0667926102421346, 0.5246154643221335, 0.10983227960624652, 0.4789159868788382, 0.38701184776302905, 0.3374976363996989, 0.3374976363996989, 0.013922926878704112, 10.903907104045865, 17.14889058051614, -10.594239730786398, -10.65852217446119]. 
+ 
+ with total fitness: 2.380788634148809 
+ 
+ at index 7
+could not make child
+could not make child
+could not make child
+could not make child
+could not make child
+0.0%┣                                              ┫ 0/100 [00:00<00:-5, -0s/it]
+[1A1.0%┣▍                                         ┫ 1/100 [44:03<Inf:Inf, InfGs/it]
+[1A2.0%┣▊                                    ┫ 2/100 [01:27:52<143:30:17, 5.3ks/it]
+[1A3.0%┣█                                    ┫ 3/100 [02:11:47<106:31:38, 4.0ks/it]
+[1A4.0%┣█▌                                    ┫ 4/100 [02:55:33<93:37:50, 3.5ks/it]
+[1A5.0%┣██                                    ┫ 5/100 [03:39:22<86:49:52, 3.3ks/it]
+[1A6.0%┣██▎                                   ┫ 6/100 [04:23:54<82:41:11, 3.2ks/it]
+[1A7.0%┣██▋                                   ┫ 7/100 [05:08:34<79:42:45, 3.1ks/it]
+[1A8.0%┣███                                   ┫ 8/100 [05:53:21<77:24:06, 3.0ks/it]
+[1A9.0%┣███▍                                  ┫ 9/100 [06:37:57<75:26:44, 3.0ks/it]
+[1A10.0%┣███▋                                ┫ 10/100 [07:22:31<73:45:12, 3.0ks/it]
+[1A11.0%┣████                                ┫ 11/100 [08:07:02<72:14:40, 2.9ks/it]
+[1A12.0%┣████▎                               ┫ 12/100 [08:51:48<70:54:24, 2.9ks/it]
+[1A13.0%┣████▊                               ┫ 13/100 [09:36:45<69:41:27, 2.9ks/it]
+[1A14.0%┣█████                               ┫ 14/100 [10:21:21<68:30:27, 2.9ks/it]
+[1A15.0%┣█████▍                              ┫ 15/100 [11:05:05<67:17:58, 2.9ks/it]
+[1A16.0%┣█████▊                              ┫ 16/100 [11:48:54<66:09:48, 2.8ks/it]
+[1A17.0%┣██████▏                             ┫ 17/100 [12:32:41<65:04:32, 2.8ks/it]
+[1A18.0%┣██████▌                             ┫ 18/100 [13:16:29<64:01:52, 2.8ks/it]
+[1A19.0%┣██████▉                             ┫ 19/100 [14:00:24<63:01:48, 2.8ks/it]
+[1A20.0%┣███████▏                            ┫ 20/100 [14:44:13<62:03:02, 2.8ks/it]
+[1A21.0%┣███████▋                            ┫ 21/100 [15:27:59<61:05:33, 2.8ks/it]
+[1A22.0%┣████████                            ┫ 22/100 [16:11:49<60:09:35, 2.8ks/it]
+[1A23.0%┣████████▎                           ┫ 23/100 [16:55:40<59:14:49, 2.8ks/it]
+[1A24.0%┣████████▋                           ┫ 24/100 [17:39:29<58:20:55, 2.8ks/it]
+[1A25.0%┣█████████                           ┫ 25/100 [18:23:23<57:28:05, 2.8ks/it]
+[1A26.0%┣█████████▍                          ┫ 26/100 [19:07:10<56:35:37, 2.8ks/it]
+[1A27.0%┣█████████▊                          ┫ 27/100 [19:50:59<55:43:54, 2.7ks/it]
+[1A28.0%┣██████████                          ┫ 28/100 [20:35:03<54:53:29, 2.7ks/it]
+[1A29.0%┣██████████▍                         ┫ 29/100 [21:18:51<54:02:48, 2.7ks/it]
+[1A30.0%┣██████████▉                         ┫ 30/100 [22:02:46<53:12:53, 2.7ks/it]
+[1A31.0%┣███████████▏                        ┫ 31/100 [22:46:34<52:23:06, 2.7ks/it]
+[1A32.0%┣███████████▌                        ┫ 32/100 [23:30:18<51:33:34, 2.7ks/it]
+[1A33.0%┣███████████▉                        ┫ 33/100 [24:14:05<50:44:28, 2.7ks/it]
+[1A34.0%┣████████████▎                       ┫ 34/100 [24:57:49<49:55:38, 2.7ks/it]
+[1A35.0%┣████████████▋                       ┫ 35/100 [25:41:35<49:07:09, 2.7ks/it]
+[1A36.0%┣█████████████                       ┫ 36/100 [26:25:31<48:19:13, 2.7ks/it]
+[1A37.0%┣█████████████▎                      ┫ 37/100 [27:09:20<47:31:20, 2.7ks/it]
+[1A38.0%┣█████████████▊                      ┫ 38/100 [27:53:08<46:43:38, 2.7ks/it]
+[1A39.0%┣██████████████                      ┫ 39/100 [28:36:59<45:56:13, 2.7ks/it]
+[1A40.0%┣██████████████▍                     ┫ 40/100 [29:20:49<45:08:57, 2.7ks/it]
+[1A41.0%┣██████████████▊                     ┫ 41/100 [30:04:38<44:21:50, 2.7ks/it]
+[1A42.0%┣███████████████▏                    ┫ 42/100 [30:48:35<43:35:04, 2.7ks/it]
+[1A43.0%┣███████████████▌                    ┫ 43/100 [31:32:24<42:48:15, 2.7ks/it]
+[1A44.0%┣███████████████▉                    ┫ 44/100 [32:16:14<42:01:37, 2.7ks/it]
+[1A45.0%┣████████████████▏                   ┫ 45/100 [33:00:04<41:15:05, 2.7ks/it]
+[1A46.0%┣████████████████▋                   ┫ 46/100 [33:44:17<40:29:08, 2.7ks/it]
+[1A47.0%┣█████████████████                   ┫ 47/100 [34:28:08<39:42:51, 2.7ks/it]
+[1A48.0%┣█████████████████▎                  ┫ 48/100 [35:11:57<38:56:37, 2.7ks/it]
+[1A49.0%┣█████████████████▋                  ┫ 49/100 [35:55:40<38:10:24, 2.7ks/it]
+[1A50.0%┣██████████████████                  ┫ 50/100 [36:39:26<37:24:20, 2.7ks/it]
+[1A51.0%┣██████████████████▍                 ┫ 51/100 [37:23:15<36:38:23, 2.7ks/it]
+[1A52.0%┣██████████████████▊                 ┫ 52/100 [38:07:07<35:52:34, 2.7ks/it]
+[1A53.0%┣███████████████████                 ┫ 53/100 [38:50:59<35:06:51, 2.7ks/it]
+[1A54.0%┣███████████████████▍                ┫ 54/100 [39:34:45<34:21:06, 2.7ks/it]
+[1A55.0%┣███████████████████▉                ┫ 55/100 [40:18:33<33:35:27, 2.7ks/it]
+[1A56.0%┣████████████████████▏               ┫ 56/100 [41:02:20<32:49:52, 2.7ks/it]
+[1A57.0%┣████████████████████▌               ┫ 57/100 [41:46:06<32:04:20, 2.7ks/it]
+[1A58.0%┣████████████████████▉               ┫ 58/100 [42:30:00<31:18:57, 2.7ks/it]
+[1A59.0%┣█████████████████████▎              ┫ 59/100 [43:13:47<30:33:32, 2.7ks/it]
+[1A60.0%┣█████████████████████▋              ┫ 60/100 [43:57:34<29:48:11, 2.7ks/it]
+[1A61.0%┣██████████████████████              ┫ 61/100 [44:41:20<29:02:52, 2.7ks/it]
+[1A62.0%┣██████████████████████▎             ┫ 62/100 [45:25:06<28:17:36, 2.7ks/it]
+[1A63.0%┣██████████████████████▊             ┫ 63/100 [46:08:54<27:32:25, 2.7ks/it]
+[1A64.0%┣███████████████████████             ┫ 64/100 [46:52:50<26:47:20, 2.7ks/it]
+[1A65.0%┣███████████████████████▍            ┫ 65/100 [47:36:40<26:02:14, 2.7ks/it]
+[1A66.0%┣███████████████████████▊            ┫ 66/100 [48:20:29<25:17:11, 2.7ks/it]
+[1A67.0%┣████████████████████████▏           ┫ 67/100 [49:04:19<24:32:10, 2.7ks/it]
+[1A68.0%┣████████████████████████▌           ┫ 68/100 [49:48:08<23:47:10, 2.7ks/it]
+[1A69.0%┣████████████████████████▉           ┫ 69/100 [50:31:55<23:02:12, 2.7ks/it]
+[1A70.0%┣█████████████████████████▏          ┫ 70/100 [51:15:54<22:17:21, 2.7ks/it]
+[1A71.0%┣█████████████████████████▋          ┫ 71/100 [51:59:41<21:32:26, 2.7ks/it]
+[1A72.0%┣██████████████████████████          ┫ 72/100 [52:43:25<20:47:33, 2.7ks/it]
+[1A73.0%┣██████████████████████████▎         ┫ 73/100 [53:27:07<20:02:40, 2.7ks/it]
+[1A74.0%┣██████████████████████████▋         ┫ 74/100 [54:10:52<19:17:51, 2.7ks/it]
+[1A75.0%┣███████████████████████████         ┫ 75/100 [54:54:40<18:33:04, 2.7ks/it]
+[1A76.0%┣███████████████████████████▍        ┫ 76/100 [55:38:24<17:48:17, 2.7ks/it]
+[1A77.0%┣███████████████████████████▊        ┫ 77/100 [56:22:09<17:03:33, 2.7ks/it]
+[1A78.0%┣████████████████████████████        ┫ 78/100 [57:05:51<16:18:49, 2.7ks/it]
+[1A79.0%┣████████████████████████████▍       ┫ 79/100 [57:49:35<15:34:07, 2.7ks/it]
+[1A80.0%┣████████████████████████████▉       ┫ 80/100 [58:33:20<14:49:27, 2.7ks/it]
+[1A81.0%┣█████████████████████████████▏      ┫ 81/100 [59:17:06<14:04:49, 2.7ks/it]
+[1A82.0%┣█████████████████████████████▌      ┫ 82/100 [60:00:50<13:20:11, 2.7ks/it]
+[1A83.0%┣█████████████████████████████▉      ┫ 83/100 [60:44:32<12:35:34, 2.7ks/it]
+[1A84.0%┣██████████████████████████████▎     ┫ 84/100 [61:28:14<11:50:59, 2.7ks/it]
+[1A85.0%┣██████████████████████████████▋     ┫ 85/100 [62:11:56<11:06:25, 2.7ks/it]
+[1A86.0%┣███████████████████████████████     ┫ 86/100 [62:55:40<10:21:53, 2.7ks/it]
+[1A87.0%┣███████████████████████████████▎    ┫ 87/100 [63:39:26<09:37:21, 2.7ks/it]
+[1A88.0%┣███████████████████████████████▊    ┫ 88/100 [64:23:10<08:52:51, 2.7ks/it]
+[1A89.0%┣████████████████████████████████    ┫ 89/100 [65:06:54<08:08:22, 2.7ks/it]
+[1A90.0%┣████████████████████████████████▍   ┫ 90/100 [65:50:38<07:23:53, 2.7ks/it]
+[1A91.0%┣████████████████████████████████▊   ┫ 91/100 [66:34:22<06:39:26, 2.7ks/it]
+[1A92.0%┣█████████████████████████████████▏  ┫ 92/100 [67:18:07<05:55:00, 2.7ks/it]
+[1A93.0%┣█████████████████████████████████▌  ┫ 93/100 [68:01:50<05:10:34, 2.7ks/it]
+[1A94.0%┣█████████████████████████████████▉  ┫ 94/100 [68:45:34<04:26:10, 2.7ks/it]
+[1A95.0%┣██████████████████████████████████▏ ┫ 95/100 [69:29:18<03:41:46, 2.7ks/it]
+[1A96.0%┣██████████████████████████████████▋ ┫ 96/100 [70:13:02<02:57:23, 2.7ks/it]
+[1A97.0%┣███████████████████████████████████ ┫ 97/100 [70:56:48<02:13:01, 2.7ks/it]
+[1A98.0%┣███████████████████████████████████▎┫ 98/100 [71:40:36<01:28:40, 2.7ks/it]
+[1A99.0%┣██████████████████████████████████████▋┫ 99/100 [72:24:21<44:20, 2.7ks/it]
+[1A100.0%┣█████████████████████████████████████┫ 100/100 [73:08:05<00:00, 2.7ks/it]
+[1A100.0%┣█████████████████████████████████████┫ 100/100 [73:08:05<00:00, 2.7ks/it]
+Sampling Rate is: 500.0
+  6.662303 seconds (11.40 M allocations: 638.097 MiB, 4.18% gc time, 99.37% compilation time)
+Running MC trials for phenotype: 1
+Running MC trials for phenotype: 2
+Running MC trials for phenotype: 3
+Running MC trials for phenotype: 4
+Running MC trials for phenotype: 5
+Running MC trials for phenotype: 6
+Running MC trials for phenotype: 7
+Running MC trials for phenotype: 8
+Running MC trials for phenotype: 9
+Running MC trials for phenotype: 10
+Running MC trials for phenotype: 11
+Running MC trials for phenotype: 12
+Running MC trials for phenotype: 13
+Running MC trials for phenotype: 14
+Running MC trials for phenotype: 15
+Running MC trials for phenotype: 16
+Running MC trials for phenotype: 17
+Running MC trials for phenotype: 18
+Running MC trials for phenotype: 19
+Running MC trials for phenotype: 20
+Running MC trials for phenotype: 21
+Running MC trials for phenotype: 22
+Running MC trials for phenotype: 23
+Running MC trials for phenotype: 24
+Running MC trials for phenotype: 25
+Running MC trials for phenotype: 26
+Running MC trials for phenotype: 27
+Running MC trials for phenotype: 28
+Running MC trials for phenotype: 29
+Running MC trials for phenotype: 30
+Running MC trials for phenotype: 31
+Running MC trials for phenotype: 32
+Running MC trials for phenotype: 33
+Running MC trials for phenotype: 34
+Running MC trials for phenotype: 35
+Running MC trials for phenotype: 36
+Running MC trials for phenotype: 37
+Running MC trials for phenotype: 38
+Running MC trials for phenotype: 39
+Running MC trials for phenotype: 40
+Running MC trials for phenotype: 41
+Running MC trials for phenotype: 42
+Running MC trials for phenotype: 43
+Running MC trials for phenotype: 44
+Running MC trials for phenotype: 45
+Running MC trials for phenotype: 46
+Running MC trials for phenotype: 47
+Running MC trials for phenotype: 48
+Running MC trials for phenotype: 49
+Running MC trials for phenotype: 50
+Running MC trials for phenotype: 51
+Running MC trials for phenotype: 52
+Running MC trials for phenotype: 53
+Running MC trials for phenotype: 54
+Running MC trials for phenotype: 55
+Running MC trials for phenotype: 56
+Running MC trials for phenotype: 57
+Running MC trials for phenotype: 58
+Running MC trials for phenotype: 59
+Running MC trials for phenotype: 60
+Running MC trials for phenotype: 61
+Running MC trials for phenotype: 62
+Running MC trials for phenotype: 63
+Running MC trials for phenotype: 64
+Running MC trials for phenotype: 65
+Running MC trials for phenotype: 66
+Running MC trials for phenotype: 67
+Running MC trials for phenotype: 68
+Running MC trials for phenotype: 69
+Running MC trials for phenotype: 70
+Running MC trials for phenotype: 71
+Running MC trials for phenotype: 72
+Running MC trials for phenotype: 73
+Running MC trials for phenotype: 74
+Running MC trials for phenotype: 75
+Running MC trials for phenotype: 76
+Running MC trials for phenotype: 77
+Running MC trials for phenotype: 78
+Running MC trials for phenotype: 79
+Running MC trials for phenotype: 80
+Running MC trials for phenotype: 81
+Running MC trials for phenotype: 82
+Running MC trials for phenotype: 83
+Running MC trials for phenotype: 84
+Running MC trials for phenotype: 85
+Running MC trials for phenotype: 86
+Running MC trials for phenotype: 87
+Running MC trials for phenotype: 88
+Running MC trials for phenotype: 89
+Running MC trials for phenotype: 90
+Running MC trials for phenotype: 91
+Running MC trials for phenotype: 92
+Running MC trials for phenotype: 93
+Running MC trials for phenotype: 94
+Running MC trials for phenotype: 95
+Running MC trials for phenotype: 96
+Running MC trials for phenotype: 97
+Running MC trials for phenotype: 98
+Running MC trials for phenotype: 99
+Running MC trials for phenotype: 100
+[?1h=
+                                           < M A T L A B (R) >
+                                 Copyright 1984-2021 The MathWorks, Inc.
+                            R2021a Update 3 (9.10.0.1684407) 64-bit (glnxa64)
+                                               May 27, 2021
+
+ 
+For online documentation, see https://www.mathworks.com/support
+For product information, visit www.mathworks.com.
+ 
+[?1l>time : 15:11:19
+Running Generation: 2
+Sampling Rate is: 500.0
+best phenotype in this generation is: 
+ [0.19248007490793242, 0.023321184078598626, 63.56495714358012, 101.35747472653007, 0.773026827708943, 3.1070170200615554, 3.0534398740320787, 3.524507259575421, 0.22264412793264904, 0.4805465711662269, 2.1770312750283694, 0.799332073410183, 0.2610558924192919, 0.4817300109710078, 0.4254005857874862, 0.18193928541444182, 30.316372519018586, 36.166753811580435, -15.015137368267126, -2.8638508203495405]. 
+ 
+ with total fitness: 2.3555065625794764 
+ 
+ at index 6
+could not make child
+could not make child
+could not make child
+could not make child
+could not make child
+could not make child
+could not make child
+could not make child
+could not make child
+could not make child

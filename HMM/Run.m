@@ -1,0 +1,27 @@
+clear all; close all;
+
+addpath(genpath('/home/james/HMM-MAR-master/'))
+
+load ../datafiles/PopCurrent.mat
+
+sizePop = size(popcurrent,3);
+stats  = zeros(4,2,sizePop); % rows, 3 coloumns .....
+stats(:) = NaN;
+numTrials = size(popcurrent,2);
+save('../datafiles/stats.mat', 'stats')
+
+disp('Running HMM on all phenotypes in this generation')
+failcount = 0;
+for i = 1:sizePop
+    disp('Running HMM on phenotype ')
+    try
+    [T,stats(:,:,i)] = evalc('hmm_burst_detect_and_stats(squeeze(popcurrent(:,:,i)),numTrials);');
+    catch
+        failcount = failcount+1;
+    end
+    save('../datafiles/stats.mat', 'stats')
+end
+
+
+
+save('../datafiles/HMMStats.mat', 'stats')

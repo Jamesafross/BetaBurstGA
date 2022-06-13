@@ -1,0 +1,1 @@
+typeBurstAnalysis = "Threshold" 
