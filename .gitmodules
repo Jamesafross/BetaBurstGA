@@ -1,0 +1,6 @@
+[submodule "HMM-MAR"]
+	path = HMM-MAR
+	url = https://github.com/OHBA-analysis/HMM-MAR
+[submodule "nutmeg"]
+	path = nutmeg
+	url = https://github.com/UCSFBiomagneticImagingLab/nutmeg.git
