@@ -2,8 +2,8 @@
 clear all; close all;
 parpool('Processes',5)
 homedir=getuserdir();
-addpath(genpath(append(homedir,'/HMM-MAR/')))
-addpath(genpath(append(homedir,'/nutmeg/')))
+addpath(genpath(append('../HMM-MAR/')))
+addpath(genpath(append('../nutmeg/')))
 
 fileName = '../config.json'; % filename in JSON extension
 str = fileread(fileName); % dedicated for reading files as text
