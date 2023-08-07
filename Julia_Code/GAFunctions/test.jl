@@ -5,7 +5,6 @@ using DifferentialEquations
 using FFTW
 include("GenerateInitialPopulation.jl")
 include("../massModelFunctions/stability.jl")
-include("../massModelFunctions/rhsFunctions.jl")
 
 
 ΔE = 0.2;

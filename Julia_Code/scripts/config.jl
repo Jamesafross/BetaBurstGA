@@ -1,51 +1,56 @@
 # CONFIG FILE FOR VARIOUS
 # PARAMETERS IN THE GENETIC
 # ALGORITHM.
-
-#sizePop = 10 # size of the population (i.e number of parameter sets)
-# in each generation ---
-# this is currently constant throughout each
-# generation though I may change this in future
-#numTrial = 10 # this is the number of monte carlo trials for each parameter set
-
-#basepath
-BASEDIR = homedir()
-progDIR = pwd()
-JulDIR = "$progDIR/datafiles"
-MatDIR = "$progDIR/datafiles"# working directory
-include("burstDetectionMethod.jl")
-import Base.length
-length(x::phenotype) = 1
+HOMEDIR = homedir()
+PROGDIR = pwd()
+JULDIR = joinpath("$PROGDIR","Julia_Code/")
+MATDIR = joinpath("$PROGDIR","HMM/")
+DATADIR = joinpath("$PROGDIR","datafiles/")
 
 
-size_pop = 100
-num_child = 20
+include(joinpath("$JULDIR","GAFunctions","structures.jl"))
+include(joinpath("$JULDIR","common","helpers.jl"))
 
-tour_rounds = 4
-min_parents = 15
-mc_trials = 100
+import JSON
 
 
-const_params = ConstParams()
+configuration = load_config_json(joinpath("$PROGDIR","config.json"))
+
+size_pop = configuration["GA_config"]["size_pop"]
+num_child = configuration["GA_config"]["num_child"]
+
+tour_rounds = configuration["GA_config"]["tour_rounds"]
+min_parents = configuration["GA_config"]["min_parents"]
+mc_trials = configuration["solve_options"]["mc_trials"]
+
+params_dict = configuration["const_model_params"]
+
+const_params = ConstParams(
+    ΔE = params_dict["Delta_E"],
+    ΔI = params_dict["Delta_I"],
+    η_0E = params_dict["eta_0E"],
+    η_0I = params_dict["eta_0I"],
+    τE = params_dict["tau_E"],
+    τI = params_dict["tau_I"],
+)
 
 
-if typeBurstAnalysis == "HMM"
-    saveat = 10.0
-    Fs = 1000 / saveat #1000 t = 1 second
-elseif typeBurstAnalysis == "Threshold"
-    saveat = 2.0
-    Fs = 1000 / saveat
-end
-println("Sampling Rate is: ", Fs)
-dt = 0.01
-buffer_period = 2000
+
+sampling_rate = configuration["solve_options"]["sampling_rate"]
+saveat = 1000/sampling_rate
+dt = configuration["solve_options"]["dt"]
+buffer_period = configuration["solve_options"]["buffer_period"]
 time_max = 100000 + buffer_period
 time_span = (0.0, time_max)
-global time_range = collect(buffer_period+saveat:saveat:time_max)
-
-
+time_range = collect(buffer_period+saveat:saveat:time_max)
+println("Sampling Rate is: ", sampling_rate)
 
 
 if size_pop < num_child
     @error "sizePop is larger than the number of child phenotypes!"
 end
+
+
+
+
+

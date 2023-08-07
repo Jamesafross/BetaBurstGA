@@ -1,0 +1,29 @@
+{   "type_burst_analysis": "HMM",
+    "GA_config": {
+        "size_pop": 150,
+        "num_child": 100,
+        "tour_rounds": 5,
+        "min_parents": 10
+    },
+    "solve_options": {
+        "mc_trials": 200,
+        "dt": 0.1,
+        "buffer_period": 2000,
+        "sampling_rate": 100
+    },
+    "const_model_params": {
+        "Delta_E": 0.2,
+        "Delta_I": 0.2,
+        "eta_0E": 2.0,
+        "eta_0I": 1.8,
+        "tau_E": 12,
+        "tau_I": 15,
+        "noise_range": {
+            "noise_max": 0.05,
+            "noise_min": 0.0005 
+        }
+    }
+}
+
+
+

@@ -1,15 +1,10 @@
-using DifferentialEquations
-using NLsolve
-using LinearAlgebra
-using Parameters
-using MAT
+include("config.jl")
 using JLD
 
-include("../GAFunctions/GenerateInitialPopulation.jl")
-include("../GAFunctions/structures.jl")
-include("../massModelFunctions/stability.jl")
-include("../massModelFunctions/_includes.jl")
-include("config.jl")
+
+include(joinpath("$JULDIR","GAFunctions","GenerateInitialPopulation.jl"))
+include(joinpath("$JULDIR","GAFunctions","structures.jl"))
+
 
 
 
@@ -18,7 +13,13 @@ init_pop = generate_population(size_pop, const_params)
 #print(length(InitPop))
 println("Done.")
 
-save("$JulDIR/Generation.jld", "GenPop", init_pop)
+save(joinpath("$DATADIR","Generation.jld"), "GenPop", init_pop)
 
 best_phenotype = []
-save("$JulDIR/BestInGen.jld", "BestPhenotype", best_phenotype)
+save(joinpath("$DATADIR","BestInGen.jld"), "BestPhenotype", best_phenotype)
+generation_data = Dict("Data" => [])
+
+
+open(joinpath("$PROGDIR","generation_results.json"),"w") do f
+    JSON.print(f, generation_data, 4)
+end

@@ -1,5 +1,8 @@
 #functions for generating the initial population of parameters
 include("_helpers.jl")
+include("../massModelFunctions/stability.jl")
+using Parameters
+
 
 function random_number_generator(a, b, y)
     # creates a uniform random number between a and b
@@ -8,6 +11,8 @@ end
 
 function generate_good_parameters(const_params)
 
+    noise_range = configuration["const_model_params"]["noise_range"]
+    noise_max = noise_range["noise_max"]
 
     @unpack ΔE, ΔI, η_0E, η_0I, τE, τI = const_params
 
@@ -26,7 +31,7 @@ function generate_good_parameters(const_params)
     params2 = κSEE, κSIE, κSEI, κSII,
     αEE, αIE, αEI, αII,
     κVEE, κVIE, κVEI, κVII,
-    VsynEE, VsynIE, VsynEI, VsynII, ΔE, ΔI, η_0E + rand(), η_0I + rand(), τE, τI
+    VsynEE, VsynIE, VsynEI, VsynII, ΔE, ΔI, η_0E + noise_max*rand(), η_0I + noise_max*rand(), τE, τI
 
     eigs1 = get_eigenvalues(params1)
     eigs2 = get_eigenvalues(params2)
@@ -49,7 +54,7 @@ function generate_good_parameters(const_params)
         params2 = κSEE, κSIE, κSEI, κSII,
         αEE, αIE, αEI, αII,
         κVEE, κVIE, κVEI, κVII,
-        VsynEE, VsynIE, VsynEI, VsynII, ΔE, ΔI, η_0E + rand(), η_0I + rand(), τE, τI
+        VsynEE, VsynIE, VsynEI, VsynII, ΔE, ΔI, η_0E + noise_max*rand(), η_0I + noise_max*rand(), τE, τI
 
         eigs1 = get_eigenvalues(params1)
         eigs2 = get_eigenvalues(params2)
@@ -93,7 +98,6 @@ function generate_population(size_pop::Int, const_params::ConstParams)
     Threads.@threads for i = 1:size_pop
         println("Generating Parameters (", i, "/", size_pop, ")")
         push!(phenotypes, phenotype(P=generate_good_parameters(const_params)))
-
     end
     return phenotypes
 end

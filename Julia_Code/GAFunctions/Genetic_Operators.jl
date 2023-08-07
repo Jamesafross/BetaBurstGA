@@ -2,13 +2,12 @@ using Random
 include("_helpers.jl")
 #genetic operations
 
-
 function mutate(parent)
     number_params = size(parent, 1)
     #mutate genes in the parameter set
     number_mutations = Int(round(number_params * rand()))
 
-    mutation_indices = Int.(randperm(numParams)[1:Int(number_mutations)]) # mutation indicies
+    mutation_indices = Int.(randperm(number_params)[1:Int(number_mutations)]) # mutation indicies
     for i = 1:number_mutations
         parent[mutation_indices[i]] += (-0.5 + 1 * rand()) * parent[mutation_indices[i]] # changes a gene
     end
@@ -16,20 +15,21 @@ function mutate(parent)
 end
 
 function crossover(parent1, parent2; just_stochastic=false)
+
     if just_stochastic == true
         number_params = 4
     else
         number_params = size(parent1.P, 1)
     end
-    number_crossover = rand(1:number_params)
-    crossover_points = randperm(number_params)[1:number_crossover]
+    number_crossover_points = rand(1:number_params)
+    crossover_points = randperm(number_params)[1:number_crossover_points]
 
     crossover_params_parent1 = parent1.P
     crossover_params_parent2 = parent2.P
 
-    for i = 1:numCrossover
-        crossover_params_parent1[crossover_points[i]] = parent2.P[cP[i]]
-        crossover_params_parent2[crossover_points[i]] = parent1.P[cP[i]]
+    for i = 1:number_crossover_points
+        crossover_params_parent1[crossover_points[i]] = parent2.P[crossover_points[i]]
+        crossover_params_parent2[crossover_points[i]] = parent1.P[crossover_points[i]]
     end
     child1 = phenotype(P=crossover_params_parent1)
     child2 = phenotype(P=crossover_params_parent2)
@@ -69,15 +69,13 @@ end
 
 function make_next_gen(phenotypes, best_phenotype, size_pop, n, const_params)
     children = do_crossover(phenotypes, n, const_params)
-    println(length(children))
-
+   
     number_new = size_pop - length(children) - 1
 
-    new_phenotypes = GenPop(number_new, const_params)
-    print("length new phenotypes = ", length(new_phenotypes))
+    new_phenotypes = generate_population(number_new, const_params)
 
     next_generation = cat(best_phenotype, children, new_phenotypes, dims=1)
-    println(length(next_generation))
+  
     return next_generation
 end
 
@@ -108,7 +106,7 @@ function accept_child(const_params, parent1, parent2)
 
 
     if rand() > 0.3
-        mutate(p)
+        mutate(params)
     end
 
     params1 = κSEE, κSIE, κSEI, κSII, αEE, αIE, αEI, αII,
@@ -129,14 +127,14 @@ function accept_child(const_params, parent1, parent2)
         while (maximum(real.(eigs1)) > 0.0 || maximum(real.(eigs2)) < 0.0) && Main.counter < 200
             #println(maximum(real.(EIGS)))
             if Main.counter > 100
-                p = crossover(parent1, parent2; just_stochastic=true).P
+                params = crossover(parent1, parent2; just_stochastic=true).P
             else
-                p = crossover(Parent1, Parent2).P
+                params = crossover(Parent1, Parent2).P
             end
 
 
             if rand() > 0.3
-                mutate(p)
+                mutate(params)
             end
 
 
@@ -178,7 +176,7 @@ function accept_child(const_params, parent1, parent2)
     else
         println("successfully generated a valid child")
         children_generated = true
-        return phenotype(P=p), children_generated
+        return phenotype(P=params), children_generated
     end
 end
 

@@ -1,4 +1,4 @@
-function monte_carlo_loop!(pop_i, const_params, dt, time_range, time_span, pop_current, i)
+function monte_carlo_loop!(pop_i, const_params, dt, time_range, time_span, pop_current, mc_trials, i)
 
     @unpack ΔE, ΔI, η_0E, η_0I, τE, τI = const_params
     println("Running MC trials for phenotype: ", i)

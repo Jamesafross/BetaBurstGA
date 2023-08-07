@@ -1,3 +1,4 @@
+using NLsolve,LinearAlgebra
 function JacMat(rE, rI, vE, vI, p)
     κSEE, κSIE, κSEI, κSII,
     αEE, αIE, αEI, αII,

@@ -1,4 +1,4 @@
-function stats = hmm_burst_detect_and_stats(current,numTrials,sampling_freq)
+function stats = hmm_burst_detect_and_stats(current,numTrials,sampling_freq,downsample)
 stats = zeros(4,2);
 %% Run HMM_TE on each subject and region individually
 for sub = 1:1
@@ -14,6 +14,7 @@ for sub = 1:1
     % Downsample from 500 to 100Hz
     new_freq = 100;
     [data_new,T_new] = downsampledata(current',T,new_freq,samp_freq);
+    current = [];
     
     % Hack to allow some temporally local variance normalisation
     dummy_trial_length = 4; % secs
@@ -55,36 +56,13 @@ for sub = 1:1
     end
     
     % Save the output
- 
-    save hmm_all_reg.mat
-    save Gamma_all_reg.mat
+
 end
 %% HMM Options:
-options = struct(); % Create options struct
-no_states = 3;
-Hz = 100; % the frequency of the downsampled data
-options.K = no_states;
-options.standardise = 1; % since we hacked the T vector
-options.verbose = 1;
-options.Fs = Hz;
-options.order = 0;
-lags = 11; % a sensible range is between 3 and 11.
-options.embeddedlags = -lags:lags; 
-options.zeromean = 1;
-options.covtype = 'full'; 
-options.useMEX = 1; % runs much faster
-options.dropstates = 1;
-options.DirichletDiag = 10; % diagonal of prior of trans-prob matrix (default 10 anyway)
-options.useParallel = 0;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Load data:
 for sub = 1
- 
-    
-   
-    T = size(current,2);
-    [data_new,T_new] = downsampledata(current',T,100,samp_freq);
 
     % Hack to allow some temporally local variance normalisation
     dummy_trial_length = 4; % secs
@@ -94,12 +72,9 @@ for sub = 1
     if tmp > 0
         T_cat(end) = tmp;
     end
-    T_new = T_cat;
-    data_new = data_new';
-    
-    load hmm_all_reg.mat
+  
+   
     hmm_all_reg_TE = hmm_all_reg;
-    load Gamma_all_reg.mat 
     Gamma_all_reg_TE = Gamma_all_reg;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -180,7 +155,10 @@ stats(2,2) = std(num_bursts);
 stats(3,2) = skewness(num_bursts);
 stats(4,2) = kurtosis(num_bursts);
 
-
+stats(1,3) = mean(burst_pow);
+stats(2,3) = std(burst_pow);
+stats(3,3) = skewness(burst_pow);
+stats(4,3) = kurtosis(burst_pow);
 
 
 end

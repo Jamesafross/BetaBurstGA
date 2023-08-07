@@ -1,17 +1,26 @@
 
 clear all; close all;
-parpool('Processes',10)
+parpool('Processes',5)
+homedir=getuserdir();
+addpath(genpath(append(homedir,'/HMM-MAR-master/')))
+addpath(genpath(append(homedir,'/nutmegbeta/')))
 
-addpath(genpath('/home/james/HMM-MAR-master/'))
-addpath(genpath('/home/james/nutmegbeta/'))
+fileName = '../config.json'; % filename in JSON extension
+str = fileread(fileName); % dedicated for reading files as text
+data = jsondecode(str); 
+
+
 
 load ../datafiles/PopCurrent.mat
 
-sizePop = size(popcurrent,3);
+sizePop = data.GA_config.size_pop;
+sampling_freq=data.solve_options.sampling_rate;
+numTrials = data.solve_options.mc_trials;
+
+
 hmmstats  = zeros(4,2,sizePop); % rows, 3 coloumns .....
 hmmstats(:) = NaN;
-sampling_freq=100;
-numTrials = size(popcurrent,1);
+
 save('../datafiles/stats.mat', 'hmmstats')
 
 disp('Running HMM on all phenotypes in this generation')

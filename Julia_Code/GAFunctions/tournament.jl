@@ -1,6 +1,5 @@
 function assign_stats(phenotype, stats)
-    print(size(phenotype))
-    for i = 1:size(phenotype, 1)
+    for i in eachindex(phenotype)
         phenotype[i].Stats = stats[:, :, i]
     end
     return nothing
@@ -10,7 +9,7 @@ function find_best(phenotypes)
     bestIndx = 1
     bestFitness = 0
 
-    for i = 1:size(phenotypes, 1)
+    for i in eachindex(phenotypes)
         if i == 1
             bestFitness = phenotypes[i].Fitness
             bestIndx = i
@@ -26,7 +25,7 @@ end
 
 
 function assign_fitness(phenotypes, realdata_stats)
-    for i = 1:size(phenotypes, 1)
+    for i in eachindex(phenotypes)
         get_total_fitness(phenotypes[i], realdata_stats)
     end
     return nothing
@@ -34,10 +33,8 @@ end
 
 function get_total_fitness(phenotypes, realdata_stats)
     fitnessMat = zeros(size(realdata_stats))
-    for i = 1:size(fitnessMat, 1)
-        for j = 1:size(fitnessMat, 2)
-            fitnessMat[i, j] = (abs(realdata_stats[i, j] - phenotypes.Stats[i, j])) / abs(realdata_stats[i, j])
-        end
+    for i in eachindex(fitnessMat)
+            fitnessMat[i] = (abs(realdata_stats[i] - phenotypes.Stats[i])) / abs(realdata_stats[i])
     end
 
     if isnan(sum(fitnessMat)) == true
@@ -50,7 +47,7 @@ end
 
 function setFitnessTest(phenotypes)
     rperm = randperm(size(phenotypes, 1))
-    for i = 1:size(phenotypes, 1)
+    for i in eachindex(phenotypes, 1)
         phenotypes[i].Fitness = rperm[i]
     end
 
@@ -74,12 +71,12 @@ end
 
 function tournamentRound(phenotypes)
 
-    sizePop = size(phenotypes, 1)
+    size_pop = size(phenotypes, 1)
 
-    if mod(sizePop, 2) != 0.0
+    if mod(size_pop, 2) != 0.0
         maxFitness = 0
         indexMaxFitness = 0
-        for i = 1:sizePop
+        for i = 1:size_pop
             if i == 1
                 maxFitness = phenotypes[i].Fitness
                 indexMaxFitness = i
@@ -92,16 +89,16 @@ function tournamentRound(phenotypes)
             end
         end
         #println(phenotypes[indexMaxFitness].Fitness)
-        phenotypes = phenotypes[setdiff(Int.(round.(LinRange(1, sizePop, sizePop))), [indexMaxFitness])]
-        sizePop = sizePop - 1
+        phenotypes = phenotypes[setdiff(Int.(round.(LinRange(1, size_pop, size_pop))), [indexMaxFitness])]
+        size_pop = size_pop - 1
 
     end
 
-    global groupA = phenotypes[1:Int(round(sizePop) / 2)]
+    global groupA = phenotypes[1:Int(round(size_pop) / 2)]
 
-    global groupB = phenotypes[Int(round(sizePop) / 2)+1:end]
+    global groupB = phenotypes[Int(round(size_pop) / 2)+1:end]
     winners = []
-    for i = 1:Int(sizePop / 2)
+    for i = 1:Int(size_pop / 2)
         if i == 1
             if groupA[i].Fitness > groupB[i].Fitness
                 winners = [groupB[i]]
