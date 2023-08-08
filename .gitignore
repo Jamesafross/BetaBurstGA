@@ -1,4 +1,4 @@
 datafiles/
 3001/
 Threshold/
-!datafiles/HMMrealDataStats.txt
+!datafiles/HMMrealDataStats.jl
