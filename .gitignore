@@ -1,4 +1,4 @@
-datafiles/
+datafiles/*
 3001/
 Threshold/
 !datafiles/HMMrealDataStats.jl
