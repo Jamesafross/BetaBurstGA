@@ -3,8 +3,8 @@ clear all; close all;
 parpool('Threads')
 
 homedir=getuserdir()
-addpath(genpath(append(homedir,'BetaBurstGA','/HMM-MAR/')));
-addpath(genpath(append(homedir,'BetaBurstGA','/nutmeg/')));
+addpath(genpath(append(homedir,'/BetaBurstGA','/HMM-MAR/')));
+addpath(genpath(append(homedir,'/BetaBurstGA','/nutmeg/')));
 ls(homedir)
 cd(append(homedir,'/BetaBurstGA/HMM/'));
 fileName = '../config.json'; % filename in JSON extension
