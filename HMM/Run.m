@@ -3,10 +3,10 @@ clear all; close all;
 parpool('Threads')
 
 homedir=getuserdir();
-cd homedir + '/BetaBurstGA/HMM
-addpath(genpath(append('../HMM-MAR/')))
-addpath(genpath(append('../nutmeg/')))
 
+addpath(genpath(append(homedir,'/BetaBurstGA','/HMM-MAR/')));
+addpath(genpath(append(homedir,'/BetaBurstGA','/nutmeg/')));
+cd(append(homedir,'/BetaBurstGA/HMM/'));
 fileName = '../config.json'; % filename in JSON extension
 str = fileread(fileName); % dedicated for reading files as text
 data = jsondecode(str); 
